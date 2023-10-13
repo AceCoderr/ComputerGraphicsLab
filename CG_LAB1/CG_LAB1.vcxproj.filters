@@ -19,4 +19,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="vertex_shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\admin\Downloads\Lab 1(2)\Lab 1\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
