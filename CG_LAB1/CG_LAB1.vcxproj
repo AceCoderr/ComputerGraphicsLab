@@ -76,14 +76,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\freeglut\include;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glew-1.10.0\include;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glm-0.9.9.7;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glfw-3.3.8\include;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\freeglut\include;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glew-1.10.0\include;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glm-0.9.9.7;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glfw-3.3.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\freeglut\lib;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glew-1.10.0\lib\Release\Win32;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glfw-3.3.8\bin\WIN32\lib-vc2022;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\Assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freeglut.lib;glew32.lib;glfw3.lib;user32.lib;gdi32.lib;shell32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\freeglut\lib;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glew-1.10.0\lib\Release\Win32;D:\TCD Courework\Computer Graphics\Lab 01\CG_LAB1\glfw-3.3.8\bin\WIN32\glfw-3.3.8.bin.WIN32\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;glfw3.lib;user32.lib;gdi32.lib;shell32.lib;opengl32.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib; libcmtd.lib;</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -142,9 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\admin\Downloads\Lab 1(2)\Lab 1\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="vertex_shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\admin\Downloads\Lab 1(2)\Lab 1\main.h" />
